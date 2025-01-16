@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "title": "Hello World",
+        "body": "This is your first API-hosted data."
+    },
+    {
+        "id": 2,
+        "title": "Another Post",
+        "body": "Here's some more data for testing."
+    }
+]
