@@ -49,6 +49,13 @@
             margin: 10px 0;
             border-radius: 8px;
         }
+        .api-data div {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -62,23 +69,27 @@
             <p><strong>Phone:</strong> 406-239-4466</p>
             <p><strong>Email:</strong> <a href="mailto:SkiMontanaTom@gmail.com">SkiMontanaTom@gmail.com</a></p>
             <p><a href="#photo-feed">View Photo Feed</a></p>
+            <p><a href="#api-data">View API Data Feed</a></p>
         </section>
 
         <section id="photo-feed">
             <h2>Photo Feed</h2>
             <div class="photo-feed">
-                <!-- Add image links here -->
                 <img src="photo1.jpg" alt="Photo 1">
                 <img src="photo2.jpg" alt="Photo 2">
                 <img src="photo3.jpg" alt="Photo 3">
             </div>
         </section>
+
         <section id="api-data">
             <h2>API Data Feed</h2>
+            <div class="api-data" id="api-data-container">
+                <!-- API data will be dynamically loaded here -->
+            </div>
         </section>
     </main>
 
-     <script>
+    <script>
         async function fetchHostedData() {
             const apiKey = "12345-abcde-67890"; // Replace with your actual API key
             const userKey = prompt("Enter your API Key to access the data:");
